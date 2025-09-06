@@ -1,47 +1,52 @@
-.cart-container{
+.cart-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
 
-.car-name{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px;
+.car-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 
 }
-.cart{
+
+.cart {
     max-width: 300%;
     border-radius: 10px;
     background-color: white;
     padding: 10px;
 }
 
-.price-detail{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 6px;   
-   margin-top: -20px; 
+.price-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6px;
+    margin-top: -20px;
 }
-.text-main{
+
+.text-main {
     color: whitesmoke;
 }
-.rent-title-page{
+
+.rent-title-page {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#rent-search{
+
+#rent-search {
     width: 80%;
     padding: 20px;
     margin-left: 100px;
     border-radius: 10px;
 }
-.car-rent-button{
+
+.car-rent-button {
     padding: 20px;
     background-color: greenyellow;
 
