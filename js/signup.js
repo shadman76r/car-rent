@@ -35,14 +35,14 @@ function validateEmail(email) {
 
 // Contact Number Validation (using ASCII values)
 function validateContact(contact) {
-    if (contact.length !== 10) {
+    if (contact.length !== 11) {
         return false;  // Ensure it is exactly 10 characters
     }
 
     for (let i = 0; i < contact.length; i++) {
         const charCode = contact.charCodeAt(i);
         if (charCode < 48 || charCode > 57) {  // Check if it's a digit (0-9)
-            return false;
+            return true;
         }
     }
 
@@ -113,7 +113,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
 
     // Contact Number Validation (using ASCII values)
     if (!validateContact(contact.value)) {
-        alert("Invalid contact number! It should be exactly 10 digits.");
+        alert("Invalid contact number! It should be exactly 11 digits.");
         return;
     }
 
