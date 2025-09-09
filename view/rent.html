@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Form</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div>
+      <p style="font-size: 1.5rem;"><a href="home.html">Back</a></p>
+      <button type="button" style="margin-bottom: 10px; font-size: 2rem;"><a href="myrent.html">My rant car</a></button>
+    </div>
+
+    <input type="text" id="name-search" placeholder="Search by name..."> <br>
+    <input type="text" id="seat-search" placeholder="Search by seats..."> <br>
+    <input type="text" id="price-search" placeholder="Search by price..."> <br>
+
+    <div class="cart-container">
+   
+      <div class="cart">
+        <img src="../pic/temerario01.webp" alt="Tesla Model X" style="width: 100%; border-radius: 10px;">
+        <div class="car-name">
+          <p><b>Tesla Model X</b></p>
+          <p><i class="fa-solid fa-star" style="color: #32D34B;"></i> 5.00</p>
+        </div>
+        <p class="available">Available from 2 August</p>
+        <div class="price-detail">
+          <p><i class="fa-solid fa-chair" style="color: #32D34B;"></i> 4 Seats</p>
+          <p><i class="fa-solid fa-sack-dollar" style="color: #32D34B;"></i> Tk350/hour</p>
+        </div>
+        <button class="car-rent-button">Rent</button>
+      </div>
+
+    
+      <div class="cart">
+        <img src="../pic/pexels-adrian-dorobantu-989175-2127733.jpg" alt="Auto Model X" style="width: 100%; border-radius: 10px;">
+        <div class="car-name">
+          <p><b>Auto Model X</b></p>
+          <p><i class="fa-solid fa-star" style="color: #32D34B;"></i> 5.00</p>
+        </div>
+        <p class="available">Available from 2 August</p>
+        <div class="price-detail">
+          <p><i class="fa-solid fa-chair" style="color: #32D34B;"></i> 2 Seats</p>
+          <p><i class="fa-solid fa-sack-dollar" style="color: #32D34B;"></i> Tk250/hour</p>
+        </div>
+        <button class="car-rent-button">Rent</button>
+      </div>
+
+    </div>
+
+    <script src="../js/rent.js"></script>
+  </body>
+</html>

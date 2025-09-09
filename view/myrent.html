@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Rent</title>
+  </head>
+  <body>
+    <h1>My Rented Cars</h1>
+    <button onclick="clearRentals()">Clear All Rentals</button>
+    <div id="rented-cars"></div>
+
+    <script>
+  
+      function displayRentedCars() {
+        const rentedCars = JSON.parse(localStorage.getItem("rentedCars")) || [];
+        const rentedCarsContainer = document.getElementById("rented-cars");
+
+    
+        if (rentedCars.length === 0) {
+          rentedCarsContainer.innerHTML = "<p>No cars rented yet.</p>";
+        } else {
+          rentedCarsContainer.innerHTML = ""; 
+          rentedCars.forEach((car) => {
+            rentedCarsContainer.innerHTML += `
+              <div class="car">
+                <p><strong>Car Name:</strong> ${car.name}</p>
+                <p><strong>Price:</strong> ${car.price}</p>
+                <p><strong>Seats:</strong> ${car.seats}</p>
+                <p><strong>Rented On:</strong> ${car.rentDate}</p>
+              </div>
+            `;
+          });
+        }
+      }
+
+ 
+      function clearRentals() {
+        localStorage.removeItem("rentedCars");
+        displayRentedCars(); 
+      }
+
+      window.onload = displayRentedCars;
+    </script>
+  </body>
+</html>
